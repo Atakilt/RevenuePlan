@@ -47,7 +47,7 @@ namespace WebApplication2.Controllers
 
         // GET: Plans/Create
         public IActionResult Create()
-        {
+        {           
             ViewData["RevenuTypeId"] = new SelectList(_context.RevenuTypes, "Id", "Name");
             return View();
         }
